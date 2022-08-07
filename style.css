@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap");
+@import url("./css/general.css");
+
+.rules {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 0 1.8em 1.8em 0;
+}
+.rules button {
+  cursor: pointer;
+  font-size: 0.8em;
+  letter-spacing: 0.2em;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  background: transparent;
+  padding: 8px 35px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 600px;
+  margin: 0 auto;
+  border: 2px solid hsl(217, 16%, 45%);
+  border-radius: 10px;
+  padding: 1em 1.2em;
+  user-select: none;
+}
+
+.header .title {
+  font-size: 1.8em;
+  color: #fff;
+}
+
+.title h3 {
+  line-height: 0.9em;
+}
+
+.score {
+  height: 100px;
+  background: #fff;
+  width: 130px;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.score p {
+  color: hsl(229, 64%, 46%);
+  font-size: 0.9em;
+}
+
+.score h2 {
+  color: hsl(229, 25%, 31%);
+}
+
+.main {
+  height: calc(100vh - 90px);
+  max-height: 100vh;
+  padding: 45px;
+  overflow-y: hidden;
+}
+
+body {
+  background-image: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+  background-repeat: no-repeat;
+  background-size: cover;
+}
