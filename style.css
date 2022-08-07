@@ -66,6 +66,66 @@
   overflow-y: hidden;
 }
 
+.main-game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 45px;
+}
+
+.rock,
+.paper,
+.scissors {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.rock:hover,
+.paper:hover,
+.scissors:hover {
+  opacity: 0.6;
+  transition: 0.2s;
+}
+
+.rock:not(:hover),
+.paper:not(:hover),
+.scissors:not(:hover) {
+  opacity: 1;
+  transition: 0.2;
+}
+
+.paper {
+  border: 20px solid hsl(230, 89%, 62%);
+  margin-right: 70px;
+}
+
+.scissors {
+  border: 20px solid hsl(39, 89%, 49%);
+}
+
+.rock {
+  margin-top: 25px;
+  border: 20px solid hsl(349, 71%, 52%);
+}
+
+.rock img,
+.paper img,
+.scissors img {
+  width: 70px;
+  height: 80px;
+}
+
+.part-one {
+  display: flex;
+}
+
 body {
   background-image: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
   background-repeat: no-repeat;
